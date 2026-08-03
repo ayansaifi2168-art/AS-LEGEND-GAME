@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AS LEGEND Snake Game</title>
+
+<link rel="stylesheet" href="snake.css">
+
+</head>
+
+<body>
+
+<div class="game">
+
+<h1>🐍 AS LEGEND Snake Game</h1>
+
+<div class="score-box">
+
+<h2>Score :
+<span id="score">0</span>
+</h2>
+
+
+<h2>High Score :
+<span id="highscore">0</span>
+</h2>
+
+<h2>Level :
+<span id="level">1</span>
+</h2>
+
+<h2>lives :
+<span id="lives">3</span>
+</h2>
+
+</div>
+
+<canvas id="game" width="400" height="400"></canvas>
+
+<div id="gameOver" class="hide">
+
+<h1>💀 GAME OVER</h1>
+
+<button onclick="restartGame()">Restart</button>
+
+</div>
+
+<div class="controls">
+
+<button onclick="moveUp()">⬆️</button>
+
+<br>
+
+<button onclick="moveLeft()">⬅️</button>
+
+<button onclick="moveDown()">⬇️</button>
+
+<button onclick="moveRight()">➡️</button>
+
+</div>
+
+</div>
+
+<audio id="eatSound" src="sounds/lv_0_20260803143057.mp4"></audio>
+<audio id="goldSound" src="sounds/goldeneat.mp4"></audio>
+<audio id="shieldSound" src="sounds/shield.mp4"></audio>
+<audio id="gameOverSound" src="sounds/gameover.mp4"></audio>
+
+<script src="snake.js"></script>
+
+</body>
+
+</html>
