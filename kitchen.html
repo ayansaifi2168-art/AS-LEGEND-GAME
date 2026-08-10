@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naini furniture</title>
+    <style>
+      .box {
+        display:flex;
+        align-items:center;
+        gap:20px;
+      }
+      .box img {
+        width:500px;
+      }
+      .box p {
+        font-size:20px;
+      }
+        /*contact pahle hide rahega*/
+        #contact {
+          display:none;
+        }
+        body {
+          background-image:url("kitchen.jpg");
+        }
+        .contact-btn {
+    background-color: #765341;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #543a2c;
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>kitchen images</h1>
+    <div class="box">
+    <img src="kitchen.jpg" width="500" height="300" alt="kitchen">
+    <ul>
+      <li>
+        <p>explore and contact us to redesign your home</p>
+         <button class="contact-btn" onclick="showContact()">CONTACT</button>
+      </li>
+    </ul>
+    </div>
+    
+    <!--contact section-->
+    <div id="contact" class="contact-section">
+      <h1>CONTACT US</h1>
+      <p>NAINI FURNITURE MART & PLYWOOD</p>
+      <P>+919690841923</P>
+      <p>ayansaifi2168@gmail.com</p>
+      <p>contact for furniture and plywood</p>
+    </div>
+    <script>
+      function showContact() {
+        document.getElementById("contact").style.display ="block";
+      }
+    </script>
+
+</body>
+</html>
