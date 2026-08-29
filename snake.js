@@ -122,16 +122,16 @@ function drawSnake(){
         if(index === 0){
 
             if(shieldActive){
-                ctx.fillStyle = "blue";
+                ctx.fillStyle = "maroon";
             }
             else{
-                ctx.fillStyle = "lime";
+                ctx.fillStyle = "black";
             }
 
         }
         else{
 
-            ctx.fillStyle = "green";
+            ctx.fillStyle = "yellow";
 
         }
 
@@ -183,7 +183,7 @@ function drawShield(){
         return;
     }
 
-    ctx.fillStyle = "blue";
+    ctx.fillStyle = "maroon";
 
     ctx.beginPath();
 
